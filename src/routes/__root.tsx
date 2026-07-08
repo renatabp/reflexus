@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Laboratório fotográfico digital com mais de 30 anos revelando suas memórias em papel Kodak. Revele fotos, polaroides, foto-presentes e álbuns online.",
+          "Laboratório fotográfico digital com mais de 30 anos revelando suas memórias. Revele fotos, polaroides, foto-presentes e álbuns online.",
       },
       { name: "author", content: "Reflexus Digital" },
       { property: "og:title", content: "Reflexus Digital — Revelação de fotos" },
