@@ -393,7 +393,7 @@ function HowItWorks() {
   const steps = [
     { n: "01", t: "Escolha o produto", d: "Navegue pelo catálogo e selecione o que combina com a ocasião." },
     { n: "02", t: "Envie sua foto", d: "Faça upload direto do celular. Nossa equipe cuida do tratamento da imagem." },
-    { n: "03", t: "Receba em casa", d: "Produção profissional em até 7 dias úteis com rastreio incluso." },
+    { n: "03", t: "Receba em casa", d: "Produção profissional em até 2 dias úteis com rastreio incluso." },
   ];
   return (
     <section className="mx-auto max-w-7xl px-6 py-24">
