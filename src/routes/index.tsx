@@ -291,9 +291,9 @@ function Steps() {
 
 function Testimonials() {
   const items = [
-    { n: "Tânia M. Santos", t: "Impressionada com a qualidade. As cores das fotos das minhas filhas ficaram perfeitas, exatamente como no visor." },
-    { n: "Cliente Reflexus", t: "Comprei em um site de grande magazine e me arrependi depois que comparei com as fotos de vocês." },
-    { n: "Cliente Reflexus", t: "super rapido obrigada pela atencao con quistaram uma clientee" },
+    { n: "TÂNIA M. SANTOS\n(JOÃO PINHEIRO/MG)", t: "Impressionada com a qualidade. As cores das fotos das minhas filhas ficaram perfeitas, melhor que no celular" },
+    { n: "EDGAR ROSÁRIO DA SILVA\u00a0\n(SÃO PAULO/SP)", t: "Comprei em um site de grande magazine e me arrependi depois que comparei com as fotos de vocês." },
+    { n: "MARIA MALTA\n(SOBRAL/CE)", t: "Super rapido obrigada pela atenção conquistaram uma cliente" },
   ];
   return (
     <section className="bg-foreground py-24 text-background">
