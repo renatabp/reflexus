@@ -268,7 +268,7 @@ function Steps() {
   const steps = [
     { n: "01", t: "Escolha suas fotos", d: "Direto do celular ou computador — envie quantas quiser." },
     { n: "02", t: "Personalize", d: "Escolha tamanho, papel, polaroide ou foto-presente." },
-    { n: "03", t: "Receba em casa", d: "Impressão profissional Kodak entregue em todo o Brasil." },
+    { n: "03", t: "Receba em casa", d: "Impressão profissional entregue em todo o Brasil." },
   ];
   return (
     <section id="como-funciona" className="mx-auto max-w-7xl px-6 py-24">
