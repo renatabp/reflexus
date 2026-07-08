@@ -266,7 +266,7 @@ function ServiceCard({ img, tag, title, desc }: { img: string; tag: string; titl
 
 function Steps() {
   const steps = [
-    { n: "01", t: "Escolha suas fotos", d: "Direto do celular ou computador — envie quantas quiser." },
+    { n: "01", t: "Escolha suas fotos", d: "No Android, envie direto do celular pro computador sem perder a qualidade, mesmo pelo site. Ou, se preferir, mande o link da nuvem." },
     { n: "02", t: "Personalize", d: "Escolha tamanho, papel, polaroide ou foto-presente." },
     { n: "03", t: "Receba em casa", d: "Impressão profissional entregue em todo o Brasil." },
   ];
