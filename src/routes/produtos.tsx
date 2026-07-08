@@ -210,7 +210,7 @@ function Catalog() {
       img: productAlbum,
       tag: "03 — Memórias",
       title: "Álbuns fotográficos",
-      desc: "Capa dura em couro sintético, papel fotográfico Kodak, encadernação profissional.",
+      desc: "Capa dura em couro sintético, papel fotográfico premium, encadernação profissional.",
       price: "a partir de R$ 149",
       icon: BookHeart,
     },
