@@ -107,7 +107,7 @@ function Hero() {
 
           <p className="mt-6 max-w-lg text-lg text-muted-foreground">
             Do 10x15 clássico ao 30x40 de parede. Papel brilho, fosco ou perolado.
-            Com ou sem borda branca. Tudo revelado em papel e químicos Kodak originais.
+            Com ou sem borda branca. Tudo revelado em papel e químicos originais.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
