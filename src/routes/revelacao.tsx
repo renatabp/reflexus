@@ -294,7 +294,7 @@ function Finishes() {
           Brilho, fosco ou <em className="not-italic text-gradient-warm">perolado</em>?
         </h2>
         <p className="mt-6 text-muted-foreground">
-          Todos os acabamentos são em papel fotográfico Kodak — o que muda é a
+          Todos os acabamentos são em papel fotográfico premium — o que muda é a
           textura, o brilho e a sensação ao toque. Escolha o que combina com o momento.
         </p>
       </div>
