@@ -198,9 +198,9 @@ const SECTIONS: {
   desc: string;
   icon: typeof BookHeart;
 }[] = [
+  { id: "presentes", label: "Presentes", desc: "Canecas, camisetas, aventais, ímãs e mais.", icon: Sparkles },
   { id: "albuns", label: "Álbuns", desc: "Capa dura, couro sintético e edições românticas.", icon: BookHeart },
   { id: "porta-retratos", label: "Porta-retratos", desc: "MDF, acrílico e quadros em vários tamanhos.", icon: Frame },
-  { id: "presentes", label: "Presentes", desc: "Canecas, camisetas, aventais, ímãs e mais.", icon: Sparkles },
 ];
 
 function formatBRL(v: number) {
@@ -228,7 +228,7 @@ function Catalog() {
     { img: productGifts, section: "presentes", category: "Mousepads", title: "Mousepad retangular antiderrapante", price: 34.9, installments: { n: 2, value: 17.45 } },
   ];
 
-  const [active, setActive] = useState<Section>("albuns");
+  const [active, setActive] = useState<Section>("presentes");
   const filtered = products.filter((p) => p.section === active);
   const activeSection = SECTIONS.find((s) => s.id === active)!;
 
