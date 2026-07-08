@@ -311,7 +311,7 @@ function Testimonials() {
                 {"★★★★★".split("").map((s, k) => <span key={k}>{s}</span>)}
               </div>
               <blockquote className="mt-4 font-serif text-lg leading-snug">"{i.t}"</blockquote>
-              <figcaption className="mt-6 text-sm uppercase tracking-widest text-background/60">
+              <figcaption className="mt-6 text-sm uppercase tracking-widest text-background/60 whitespace-pre-line">
                 — {i.n}
               </figcaption>
             </figure>
