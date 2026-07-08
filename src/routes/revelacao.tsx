@@ -30,7 +30,7 @@ export const Route = createFileRoute("/revelacao")({
       {
         property: "og:description",
         content:
-          "Tamanhos, papéis e acabamentos para revelar suas fotos com qualidade Kodak.",
+          "Tamanhos, papéis e acabamentos para revelar suas fotos com qualidade profissional.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
