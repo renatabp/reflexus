@@ -9,7 +9,7 @@ import {
   Image as ImageIcon,
   Layers,
   Ruler,
-  
+  Magnet,
   Phone,
   Mail,
   Check,
