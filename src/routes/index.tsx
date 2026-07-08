@@ -129,7 +129,7 @@ function Hero() {
               </div>
               <div>
                 <div className="text-sm font-semibold">Cores que não desbotam</div>
-                <div className="text-xs text-muted-foreground">Garantia Kodak Professional</div>
+                <div className="text-xs text-muted-foreground">Garantia de qualidade profissional</div>
               </div>
             </div>
           </div>
