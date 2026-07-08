@@ -126,11 +126,6 @@ function Hero() {
             </a>
           </div>
 
-          <div className="mt-12 grid grid-cols-3 gap-6 border-t border-border pt-8">
-            <Stat n="8" label="Tamanhos disponíveis" />
-            <Stat n="2" label="Acabamentos" />
-            <Stat n="Joinville" label="De Joinville SC" />
-          </div>
         </div>
 
         <div className="relative">
