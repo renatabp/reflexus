@@ -62,8 +62,8 @@ function Nav() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link to="/" className="flex items-center gap-2">
-          <LogoIcon className="h-8 w-8 text-foreground" />
-          <span className="font-serif text-2xl tracking-tight">Reflexus</span>
+          <LogoIcon className="h-10 w-10 text-foreground" />
+          <span className="font-serif text-3xl tracking-tight">Reflexus</span>
         </Link>
         <nav className="hidden gap-8 text-sm font-medium text-muted-foreground md:flex">
           <Link to="/" className="hover:text-foreground">Início</Link>
@@ -433,8 +433,8 @@ function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
-            <LogoIcon className="h-7 w-7 text-foreground" />
-            <span className="font-serif text-2xl">Reflexus</span>
+            <LogoIcon className="h-9 w-9 text-foreground" />
+            <span className="font-serif text-3xl">Reflexus</span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
             Laboratório fotográfico. Há mais de 30 anos preservando memórias com qualidade profissional.
