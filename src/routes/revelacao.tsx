@@ -24,13 +24,13 @@ export const Route = createFileRoute("/revelacao")({
       {
         name: "description",
         content:
-          "Revele suas fotos em papel Kodak profissional. Escolha tamanho (10x15, 13x18, 15x21, 20x30), acabamento brilho ou fosco, borda branca e mais.",
+          "Revele suas fotos em papel fotográfico profissional. Escolha tamanho (10x15, 13x18, 15x21, 20x30), acabamento brilho ou fosco, borda branca e mais.",
       },
       { property: "og:title", content: "Revelação de Fotos — Reflexus Digital" },
       {
         property: "og:description",
         content:
-          "Tamanhos, papéis e acabamentos para revelar suas fotos com qualidade Kodak.",
+          "Tamanhos, papéis e acabamentos para revelar suas fotos com qualidade profissional.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -98,7 +98,7 @@ function Hero() {
         <div className="flex flex-col justify-center">
           <span className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Revelação profissional Kodak
+            Revelação profissional
           </span>
 
           <h1 className="text-5xl md:text-7xl">
@@ -107,7 +107,7 @@ function Hero() {
 
           <p className="mt-6 max-w-lg text-lg text-muted-foreground">
             Do 10x15 clássico ao 30x40 de parede. Papel brilho, fosco ou perolado.
-            Com ou sem borda branca. Tudo revelado em papel e químicos Kodak originais.
+            Com ou sem borda branca. Tudo revelado em papel e químicos originais.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -127,7 +127,7 @@ function Hero() {
           <div className="mt-12 grid grid-cols-3 gap-6 border-t border-border pt-8">
             <Stat n="8" label="Tamanhos disponíveis" />
             <Stat n="3" label="Acabamentos" />
-            <Stat n="Kodak" label="Papel & químicos" />
+            <Stat n="Joinville" label="De Joinville SC" />
           </div>
         </div>
 
@@ -294,7 +294,7 @@ function Finishes() {
           Brilho, fosco ou <em className="not-italic text-gradient-warm">perolado</em>?
         </h2>
         <p className="mt-6 text-muted-foreground">
-          Todos os acabamentos são em papel fotográfico Kodak — o que muda é a
+          Todos os acabamentos são em papel fotográfico premium — o que muda é a
           textura, o brilho e a sensação ao toque. Escolha o que combina com o momento.
         </p>
       </div>
@@ -352,7 +352,7 @@ function Styles() {
 
         <div className="mt-12 grid gap-4 rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur md:grid-cols-3">
           {[
-            { icon: ShieldCheck, t: "Papel Kodak original", d: "Cores que não desbotam com o tempo." },
+            { icon: ShieldCheck, t: "Papel fotográfico premium", d: "Cores que não desbotam com o tempo." },
             { icon: Truck, t: "Envio para todo Brasil", d: "Embalagem protetora e rastreio." },
             { icon: Check, t: "Correção de cor grátis", d: "Nossa equipe ajusta cada foto antes de imprimir." },
           ].map((i) => (
@@ -376,7 +376,7 @@ function Steps() {
   const steps = [
     { n: "01", t: "Envie suas fotos", d: "Direto do celular ou computador. Sem limite de quantidade." },
     { n: "02", t: "Escolha tamanho e acabamento", d: "Combine formatos e finishes na mesma encomenda." },
-    { n: "03", t: "Receba impressas em casa", d: "Revelação Kodak entregue em até 7 dias úteis." },
+    { n: "03", t: "Receba impressas em casa", d: "Revelação profissional entregue em até 7 dias úteis." },
   ];
   return (
     <section className="mx-auto max-w-7xl px-6 py-24">
@@ -435,7 +435,7 @@ function Footer() {
             <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">Digital</span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            Laboratório fotográfico digital. Há mais de 30 anos preservando memórias com a qualidade dos insumos Kodak.
+            Laboratório fotográfico digital. Há mais de 30 anos preservando memórias com qualidade profissional.
           </p>
         </div>
 

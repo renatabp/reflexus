@@ -17,7 +17,7 @@ export const Route = createFileRoute("/produtos")({
       {
         name: "description",
         content:
-          "Canecas, quadros, álbuns, camisetas, ímãs e mais — transforme suas fotos em presentes únicos com a qualidade Kodak da Reflexus.",
+          "Canecas, quadros, álbuns, camisetas, ímãs e mais — transforme suas fotos em presentes únicos com a qualidade da Reflexus.",
       },
       { property: "og:title", content: "Foto-presentes & Personalizados — Reflexus Digital" },
       {
@@ -141,7 +141,7 @@ function Hero() {
               </div>
               <div>
                 <div className="text-sm font-semibold">Feito à mão, com carinho</div>
-                <div className="text-xs text-muted-foreground">Acabamento premium Kodak</div>
+                <div className="text-xs text-muted-foreground">Acabamento premium profissional</div>
               </div>
             </div>
           </div>
@@ -210,7 +210,7 @@ function Catalog() {
       img: productAlbum,
       tag: "03 — Memórias",
       title: "Álbuns fotográficos",
-      desc: "Capa dura em couro sintético, papel fotográfico Kodak, encadernação profissional.",
+      desc: "Capa dura em couro sintético, papel fotográfico premium, encadernação profissional.",
       price: "a partir de R$ 149",
       icon: BookHeart,
     },
@@ -399,7 +399,7 @@ function Footer() {
             <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">Digital</span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            Laboratório fotográfico digital. Há mais de 30 anos preservando memórias com a qualidade dos insumos Kodak.
+            Laboratório fotográfico digital. Há mais de 30 anos preservando memórias com qualidade profissional.
           </p>
         </div>
 

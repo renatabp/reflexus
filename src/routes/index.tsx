@@ -82,7 +82,7 @@ function Hero() {
           </h1>
 
           <p className="mt-6 max-w-lg text-lg text-muted-foreground">
-            Revelação profissional em papel e químicos Kodak — o único que preserva a
+            Revelação profissional com qualidade que preserva a
             cor das suas lembranças por décadas. Envie do celular, receba em casa.
           </p>
 
@@ -106,8 +106,8 @@ function Hero() {
 
           <div className="mt-12 grid grid-cols-3 gap-6 border-t border-border pt-8">
             <Stat n="30+" label="Anos de mercado" />
-            <Stat n="Kodak" label="Papel & químicos" />
-            <Stat n="100%" label="Feito no Brasil" />
+            <Stat n="Joinville" label="De Joinville SC" />
+            <Stat n="Brasil" label="Entrega nacional" />
           </div>
         </div>
 
@@ -116,7 +116,7 @@ function Hero() {
           <div className="relative overflow-hidden rounded-3xl border border-border shadow-warm">
             <img
               src={heroPhotos}
-              alt="Fotos reveladas em papel Kodak"
+              alt="Fotos reveladas em papel fotográfico"
               width={1200}
               height={1400}
               className="h-[560px] w-full object-cover md:h-[640px]"
@@ -129,7 +129,7 @@ function Hero() {
               </div>
               <div>
                 <div className="text-sm font-semibold">Cores que não desbotam</div>
-                <div className="text-xs text-muted-foreground">Garantia Kodak Professional</div>
+                <div className="text-xs text-muted-foreground">Garantia de qualidade profissional</div>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@ function Stat({ n, label }: { n: string; label: string }) {
 }
 
 function Marquee() {
-  const items = ["Papel Kodak", "Químicos originais", "Impressão profissional", "Cores duradouras", "Entrega em todo Brasil", "Polaroides", "Foto-presentes"];
+  const items = ["Papel fotográfico premium", "Químicos originais", "Impressão profissional", "Cores duradouras", "Entrega em todo Brasil", "Polaroides", "Foto-presentes"];
   return (
     <div className="border-y border-border bg-cream py-4 overflow-hidden">
       <div className="flex gap-10 whitespace-nowrap text-sm font-semibold uppercase tracking-widest text-muted-foreground animate-[marquee_30s_linear_infinite]" style={{ animation: "marquee 30s linear infinite" }}>
@@ -167,7 +167,7 @@ function Marquee() {
 
 function Quality() {
   const features = [
-    { icon: ShieldCheck, title: "Qualidade Kodak", desc: "Papéis e químicos originais que preservam suas fotos por toda a vida — não amarelam com o tempo." },
+    { icon: ShieldCheck, title: "Qualidade profissional", desc: "Papéis e químicos originais que preservam suas fotos por toda a vida — não amarelam com o tempo." },
     { icon: Clock, title: "30+ anos de história", desc: "Referência regional em revelação profissional. Feito por gente que ama fotografia." },
     { icon: Truck, title: "Envio para todo Brasil", desc: "Envie do celular, receba em casa. Simples, rápido e com rastreio." },
   ];
@@ -181,7 +181,7 @@ function Quality() {
           </h2>
           <p className="mt-6 text-muted-foreground">
             A maioria dos serviços online imprime em papel gráfico — barato, mas que
-            amarela em poucos anos. Na Reflexus, usamos papel fotográfico Kodak
+            amarela em poucos anos. Na Reflexus, usamos papel fotográfico
             e químicos originais desde 1993. Suas fotos duram gerações.
           </p>
         </div>
@@ -268,7 +268,7 @@ function Steps() {
   const steps = [
     { n: "01", t: "Escolha suas fotos", d: "Direto do celular ou computador — envie quantas quiser." },
     { n: "02", t: "Personalize", d: "Escolha tamanho, papel, polaroide ou foto-presente." },
-    { n: "03", t: "Receba em casa", d: "Impressão profissional Kodak entregue em todo o Brasil." },
+    { n: "03", t: "Receba em casa", d: "Impressão profissional entregue em todo o Brasil." },
   ];
   return (
     <section id="como-funciona" className="mx-auto max-w-7xl px-6 py-24">
@@ -333,7 +333,7 @@ function FinalCTA() {
               Pronto pra tirar suas fotos da tela?
             </h2>
             <p className="mt-4 text-primary-foreground/90">
-              Envie agora e receba em casa impressões Kodak que duram décadas.
+              Envie agora e receba em casa impressões que duram décadas.
             </p>
           </div>
           <Link
@@ -363,8 +363,8 @@ function Footer() {
             </span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            Laboratório fotográfico digital. Há mais de 30 anos preservando memórias com
-            a qualidade dos insumos Kodak.
+            Laboratório fotográfico digital. Há mais de 30 anos preservando memórias
+            com qualidade profissional.
           </p>
           <div className="mt-6 flex gap-3">
             <a href="#" aria-label="Instagram" className="grid h-10 w-10 place-items-center rounded-full border border-border text-muted-foreground transition hover:border-primary hover:text-primary">
