@@ -9,7 +9,7 @@ import {
   Image as ImageIcon,
   Layers,
   Ruler,
-  Palette,
+  
   Phone,
   Mail,
   Check,
@@ -108,8 +108,8 @@ function Hero() {
           </h1>
 
           <p className="mt-6 max-w-lg text-lg text-muted-foreground whitespace-pre-line">
-            Do 10x15 clássico ao 30x40 de parede. Papel brilho ou fosco. Com ou sem tarja. Tudo revelado em papel profissional
-            Para tamanhos maiores, consultar orçamento e frete.
+            Do 10x15 clássico ao 30x40 de parede. Papel brilho ou fosco. Com ou sem tarja. Polaroides também.
+            Tudo revelado em papel profissional. Para tamanhos maiores, consultar orçamento e frete.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -128,7 +128,7 @@ function Hero() {
 
           <div className="mt-12 grid grid-cols-3 gap-6 border-t border-border pt-8">
             <Stat n="8" label="Tamanhos disponíveis" />
-            <Stat n="3" label="Acabamentos" />
+            <Stat n="2" label="Acabamentos" />
             <Stat n="Joinville" label="De Joinville SC" />
           </div>
         </div>
@@ -171,7 +171,7 @@ function Stat({ n, label }: { n: string; label: string }) {
 }
 
 function Marquee() {
-  const items = ["10x15", "13x18", "15x21", "20x30", "30x40", "Brilho", "Fosco", "Perolado", "Com borda", "Sem borda"];
+  const items = ["10x15", "13x18", "15x21", "20x30", "30x40", "Brilho", "Fosco", "Polaroide", "Com tarja", "Sem tarja", "Borda branca"];
   return (
     <div className="border-y border-border bg-cream py-4 overflow-hidden">
       <div className="flex gap-10 whitespace-nowrap text-sm font-semibold uppercase tracking-widest text-muted-foreground" style={{ animation: "marquee 30s linear infinite" }}>
@@ -279,13 +279,6 @@ function Finishes() {
       desc: "Sem reflexo, textura suave ao toque. Elegante e sofisticado — não marca dedo.",
       best: "Ensaios, fotos preto e branco, casamentos.",
     },
-    {
-      icon: Palette,
-      title: "Perolado",
-      subtitle: "Metallic",
-      desc: "Acabamento com brilho sutil, quase 3D. Cores profundas com efeito metalizado.",
-      best: "Ensaios profissionais, fotos com bastante luz.",
-    },
   ];
 
   return (
@@ -293,7 +286,7 @@ function Finishes() {
       <div className="mb-14 max-w-2xl">
         <span className="text-xs font-semibold uppercase tracking-widest text-primary">Acabamentos</span>
         <h2 className="mt-4 text-4xl md:text-5xl">
-          Brilho, fosco ou <em className="not-italic text-gradient-warm">perolado</em>?
+          Brilho ou <em className="not-italic text-gradient-warm">fosco</em>?
         </h2>
         <p className="mt-6 text-muted-foreground">
           Todos os acabamentos são em papel fotográfico premium — o que muda é a
@@ -301,7 +294,7 @@ function Finishes() {
         </p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2">
         {finishes.map((f) => (
           <div key={f.title} className="group relative overflow-hidden rounded-3xl border border-border bg-card p-8 transition hover:-translate-y-1 hover:shadow-card">
             <div className="mb-6 grid h-12 w-12 place-items-center rounded-lg bg-gradient-warm text-primary-foreground">
@@ -323,9 +316,9 @@ function Finishes() {
 
 function Styles() {
   const options = [
-    { icon: ImageIcon, t: "Com borda branca", d: "Moldura clássica de laboratório fotográfico. Realça a foto e facilita colocar em porta-retratos." },
-    { icon: ImageIcon, t: "Sem borda (full)", d: "Impressão de ponta a ponta, sem margem. Visual moderno e imersivo." },
-    { icon: Layers, t: "Foto quadrada", d: "Formato 1:1 estilo Instagram. Perfeito para grids na parede." },
+    { icon: ImageIcon, t: "Com tarja", d: "Margem branca que impede o corte da foto. Ideal para álbuns e porta-retratos." },
+    { icon: ImageIcon, t: "Sem tarja", d: "Impressão de ponta a ponta, sem margem. Visual moderno e imersivo." },
+    { icon: Layers, t: "Borda branca", d: "Uma fina borda branca em toda a foto. Toque clássico de laboratório." },
     { icon: Sparkles, t: "Preto e branco", d: "Conversão profissional em P&B com preservação de tons. Fica lindo em fosco." },
   ];
 
