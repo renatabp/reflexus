@@ -198,9 +198,9 @@ const SECTIONS: {
   desc: string;
   icon: typeof BookHeart;
 }[] = [
+  { id: "presentes", label: "Presentes", desc: "Canecas, camisetas, aventais, ímãs e mais.", icon: Sparkles },
   { id: "albuns", label: "Álbuns", desc: "Capa dura, couro sintético e edições românticas.", icon: BookHeart },
   { id: "porta-retratos", label: "Porta-retratos", desc: "MDF, acrílico e quadros em vários tamanhos.", icon: Frame },
-  { id: "presentes", label: "Presentes", desc: "Canecas, camisetas, aventais, ímãs e mais.", icon: Sparkles },
 ];
 
 function formatBRL(v: number) {
