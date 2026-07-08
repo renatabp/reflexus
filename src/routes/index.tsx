@@ -149,7 +149,7 @@ function Stat({ n, label }: { n: string; label: string }) {
 }
 
 function Marquee() {
-  const items = ["Papel Kodak", "Químicos originais", "Impressão profissional", "Cores duradouras", "Entrega em todo Brasil", "Polaroides", "Foto-presentes"];
+  const items = ["Papel fotográfico premium", "Químicos originais", "Impressão profissional", "Cores duradouras", "Entrega em todo Brasil", "Polaroides", "Foto-presentes"];
   return (
     <div className="border-y border-border bg-cream py-4 overflow-hidden">
       <div className="flex gap-10 whitespace-nowrap text-sm font-semibold uppercase tracking-widest text-muted-foreground animate-[marquee_30s_linear_infinite]" style={{ animation: "marquee 30s linear infinite" }}>
