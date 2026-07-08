@@ -356,11 +356,9 @@ function Footer() {
     <footer id="contato" className="border-t border-border bg-cream/50">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-baseline gap-2">
+          <div className="flex items-center gap-2">
+            <LogoIcon className="h-7 w-7 text-foreground" />
             <span className="font-serif text-2xl">Reflexus</span>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
-              Digital
-            </span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
             Laboratório fotográfico digital. Há mais de 30 anos preservando memórias
