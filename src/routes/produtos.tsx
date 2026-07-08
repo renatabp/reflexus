@@ -141,7 +141,7 @@ function Hero() {
               </div>
               <div>
                 <div className="text-sm font-semibold">Feito à mão, com carinho</div>
-                <div className="text-xs text-muted-foreground">Acabamento premium Kodak</div>
+                <div className="text-xs text-muted-foreground">Acabamento premium profissional</div>
               </div>
             </div>
           </div>
