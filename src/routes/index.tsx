@@ -363,8 +363,8 @@ function Footer() {
             </span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            Laboratório fotográfico digital. Há mais de 30 anos preservando memórias com
-            a qualidade dos insumos Kodak.
+            Laboratório fotográfico digital. Há mais de 30 anos preservando memórias
+            com qualidade profissional.
           </p>
           <div className="mt-6 flex gap-3">
             <a href="#" aria-label="Instagram" className="grid h-10 w-10 place-items-center rounded-full border border-border text-muted-foreground transition hover:border-primary hover:text-primary">
