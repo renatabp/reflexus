@@ -98,7 +98,7 @@ function Hero() {
           </h1>
 
           <p className="mt-6 max-w-lg text-lg text-muted-foreground">
-            Canecas, quadros, álbuns, camisetas, ímãs, quebra-cabeças e muito mais.
+            Canecas, quadros, álbuns, camisetas, ímãs, porta-retratos, canva e muito mais.
             A gente transforma a foto que você ama em um presente inesquecível.
           </p>
 
@@ -117,8 +117,8 @@ function Hero() {
           </div>
 
           <div className="mt-12 grid grid-cols-3 gap-6 border-t border-border pt-8">
-            <Stat n="+20" label="Produtos únicos e personalizados" />
-            <Stat n="7 dias" label="Prazo médio de produção" />
+            <Stat n="Diversos" label="Produtos únicos e personalizados" />
+            <Stat n="2 dias" label="Prazo médio de produção" />
             <Stat n="Brasil" label="Entrega em todo país" />
           </div>
         </div>
