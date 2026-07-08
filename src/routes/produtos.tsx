@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Coffee, Frame, BookHeart, Shirt, Puzzle, Magnet, Sparkles, ShieldCheck, Truck, Camera, Phone, Mail } from "lucide-react";
 
