@@ -333,7 +333,7 @@ function FinalCTA() {
               Pronto pra tirar suas fotos da tela?
             </h2>
             <p className="mt-4 text-primary-foreground/90">
-              Envie agora e receba em casa impressões Kodak que duram décadas.
+              Envie agora e receba em casa impressões que duram décadas.
             </p>
           </div>
           <Link
