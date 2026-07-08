@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Camera, Sparkles, ShieldCheck, Truck, Clock, Phone, Mail } from "lucide-react";
+import { LogoIcon } from "@/components/LogoIcon";
 
 import heroPhotos from "@/assets/hero-photos.jpg";
 import polaroids from "@/assets/polaroids.jpg";
@@ -31,11 +32,9 @@ function Nav() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#top" className="flex items-baseline gap-2">
+        <a href="#top" className="flex items-center gap-2">
+          <LogoIcon className="h-8 w-8 text-foreground" />
           <span className="font-serif text-2xl tracking-tight">Reflexus</span>
-          <span className="text-lg font-bold uppercase tracking-[0.25em] text-primary">
-            Digital
-          </span>
         </a>
         <nav className="hidden gap-8 text-sm font-medium text-muted-foreground md:flex">
           <a href="#top" className="hover:text-foreground">Início</a>
