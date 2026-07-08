@@ -279,13 +279,6 @@ function Finishes() {
       desc: "Sem reflexo, textura suave ao toque. Elegante e sofisticado — não marca dedo.",
       best: "Ensaios, fotos preto e branco, casamentos.",
     },
-    {
-      icon: Palette,
-      title: "Perolado",
-      subtitle: "Metallic",
-      desc: "Acabamento com brilho sutil, quase 3D. Cores profundas com efeito metalizado.",
-      best: "Ensaios profissionais, fotos com bastante luz.",
-    },
   ];
 
   return (
