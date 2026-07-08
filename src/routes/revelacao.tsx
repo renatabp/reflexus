@@ -319,7 +319,7 @@ function Styles() {
     { icon: ImageIcon, t: "Com tarja", d: "Margem branca nas extremidades que impede o corte da foto. Sem perder um detalhe da sua foto!" },
     { icon: ImageIcon, t: "Sem tarja", d: "Impressão de ponta a ponta, sem margem, PADRÃO. Visual moderno e imersivo." },
     { icon: Layers, t: "Borda branca", d: "Uma fina borda branca em toda a foto. Toque clássico de laboratório." },
-    { icon: Sparkles, t: "Preto e branco", d: "Conversão profissional em P&B com preservação de tons. Fica lindo em fosco." },
+    { icon: Magnet, t: "Ímã", d: "Sua foto em ímã para geladeira. Vai fazer bonito na cozinha." },
   ];
 
   return (
