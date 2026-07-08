@@ -134,7 +134,7 @@ function RootComponent() {
 
 function FloatingSocial() {
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+    <div className="fixed bottom-6 left-6 z-50 flex flex-col gap-3">
       <a
         href="https://wa.me/5547999999999"
         target="_blank"
