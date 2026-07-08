@@ -352,7 +352,7 @@ function Styles() {
 
         <div className="mt-12 grid gap-4 rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur md:grid-cols-3">
           {[
-            { icon: ShieldCheck, t: "Papel Kodak original", d: "Cores que não desbotam com o tempo." },
+            { icon: ShieldCheck, t: "Papel fotográfico premium", d: "Cores que não desbotam com o tempo." },
             { icon: Truck, t: "Envio para todo Brasil", d: "Embalagem protetora e rastreio." },
             { icon: Check, t: "Correção de cor grátis", d: "Nossa equipe ajusta cada foto antes de imprimir." },
           ].map((i) => (
