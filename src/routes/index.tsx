@@ -16,6 +16,7 @@ function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <Nav />
       <Hero />
+      <SocialBar />
       <Marquee />
       <Services />
       <Steps />
