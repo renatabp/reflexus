@@ -24,7 +24,7 @@ export const Route = createFileRoute("/revelacao")({
       {
         name: "description",
         content:
-          "Revele suas fotos em papel Kodak profissional. Escolha tamanho (10x15, 13x18, 15x21, 20x30), acabamento brilho ou fosco, borda branca e mais.",
+          "Revele suas fotos em papel fotográfico profissional. Escolha tamanho (10x15, 13x18, 15x21, 20x30), acabamento brilho ou fosco, borda branca e mais.",
       },
       { property: "og:title", content: "Revelação de Fotos — Reflexus Digital" },
       {
