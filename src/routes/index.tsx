@@ -181,7 +181,7 @@ function Quality() {
           </h2>
           <p className="mt-6 text-muted-foreground">
             A maioria dos serviços online imprime em papel gráfico — barato, mas que
-            amarela em poucos anos. Na Reflexus, usamos papel fotográfico Kodak
+            amarela em poucos anos. Na Reflexus, usamos papel fotográfico
             e químicos originais desde 1993. Suas fotos duram gerações.
           </p>
         </div>
