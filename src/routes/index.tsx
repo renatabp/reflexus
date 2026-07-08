@@ -106,8 +106,8 @@ function Hero() {
 
           <div className="mt-12 grid grid-cols-3 gap-6 border-t border-border pt-8">
             <Stat n="30+" label="Anos de mercado" />
-            <Stat n="Kodak" label="Papel & químicos" />
-            <Stat n="100%" label="Feito no Brasil" />
+            <Stat n="Joinville" label="De Joinville SC" />
+            <Stat n="Brasil" label="Entrega nacional" />
           </div>
         </div>
 
