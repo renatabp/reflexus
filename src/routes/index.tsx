@@ -167,7 +167,7 @@ function Marquee() {
 
 function Quality() {
   const features = [
-    { icon: ShieldCheck, title: "Qualidade Kodak", desc: "Papéis e químicos originais que preservam suas fotos por toda a vida — não amarelam com o tempo." },
+    { icon: ShieldCheck, title: "Qualidade profissional", desc: "Papéis e químicos originais que preservam suas fotos por toda a vida — não amarelam com o tempo." },
     { icon: Clock, title: "30+ anos de história", desc: "Referência regional em revelação profissional. Feito por gente que ama fotografia." },
     { icon: Truck, title: "Envio para todo Brasil", desc: "Envie do celular, receba em casa. Simples, rápido e com rastreio." },
   ];
