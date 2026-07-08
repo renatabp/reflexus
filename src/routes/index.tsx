@@ -116,7 +116,7 @@ function Hero() {
           <div className="relative overflow-hidden rounded-3xl border border-border shadow-warm">
             <img
               src={heroPhotos}
-              alt="Fotos reveladas em papel Kodak"
+              alt="Fotos reveladas em papel fotográfico"
               width={1200}
               height={1400}
               className="h-[560px] w-full object-cover md:h-[640px]"
