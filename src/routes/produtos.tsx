@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Coffee, Frame, BookHeart, Shirt, Puzzle, Magnet, Sparkles, ShieldCheck, Truck, Camera, Phone, Mail } from "lucide-react";
+import { LogoIcon } from "@/components/LogoIcon";
 
 import productsHero from "@/assets/products-hero.jpg";
 import productMug from "@/assets/product-mug.jpg";
@@ -14,13 +15,13 @@ export const Route = createFileRoute("/produtos")({
   component: Produtos,
   head: () => ({
     meta: [
-      { title: "Foto-presentes & Personalizados — Reflexus Digital" },
+      { title: "Foto-presentes & Personalizados — Reflexus" },
       {
         name: "description",
         content:
           "Canecas, quadros, álbuns, camisetas, ímãs e mais — transforme suas fotos em presentes únicos com a qualidade da Reflexus.",
       },
-      { property: "og:title", content: "Foto-presentes & Personalizados — Reflexus Digital" },
+      { property: "og:title", content: "Foto-presentes & Personalizados — Reflexus" },
       {
         property: "og:description",
         content:

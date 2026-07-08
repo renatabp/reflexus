@@ -437,7 +437,7 @@ function Footer() {
             <span className="font-serif text-2xl">Reflexus</span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            Laboratório fotográfico digital. Há mais de 30 anos preservando memórias com qualidade profissional.
+            Laboratório fotográfico. Há mais de 30 anos preservando memórias com qualidade profissional.
           </p>
         </div>
 
@@ -468,7 +468,7 @@ function Footer() {
       </div>
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-muted-foreground md:flex-row">
-          <span>© {new Date().getFullYear()} Reflexus Digital. Todos os direitos reservados.</span>
+          <span>© {new Date().getFullYear()} Reflexus. Todos os direitos reservados.</span>
           <span>Feito com carinho para preservar memórias.</span>
         </div>
       </div>
