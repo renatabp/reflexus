@@ -17,7 +17,7 @@ export const Route = createFileRoute("/produtos")({
       {
         name: "description",
         content:
-          "Canecas, quadros, álbuns, camisetas, ímãs e mais — transforme suas fotos em presentes únicos com a qualidade Kodak da Reflexus.",
+          "Canecas, quadros, álbuns, camisetas, ímãs e mais — transforme suas fotos em presentes únicos com a qualidade da Reflexus.",
       },
       { property: "og:title", content: "Foto-presentes & Personalizados — Reflexus Digital" },
       {
