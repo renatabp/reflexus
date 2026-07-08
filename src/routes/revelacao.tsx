@@ -435,7 +435,7 @@ function Footer() {
             <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">Digital</span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            Laboratório fotográfico digital. Há mais de 30 anos preservando memórias com a qualidade dos insumos Kodak.
+            Laboratório fotográfico digital. Há mais de 30 anos preservando memórias com qualidade profissional.
           </p>
         </div>
 
