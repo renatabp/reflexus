@@ -98,7 +98,7 @@ function Hero() {
         <div className="flex flex-col justify-center">
           <span className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-            Revelação profissional Kodak
+            Revelação profissional
           </span>
 
           <h1 className="text-5xl md:text-7xl">
