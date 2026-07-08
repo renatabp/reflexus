@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Reflexus Digital — Revelação de fotos profissional" },
+      { title: "Reflexus — Revelação de fotos profissional" },
       {
         name: "description",
         content:
           "Laboratório fotográfico digital com mais de 30 anos revelando suas memórias. Revele fotos, polaroides, foto-presentes e álbuns online.",
       },
-      { name: "author", content: "Reflexus Digital" },
-      { property: "og:title", content: "Reflexus Digital — Revelação de fotos" },
+      { name: "author", content: "Reflexus" },
+      { property: "og:title", content: "Reflexus — Revelação de fotos" },
       {
         property: "og:description",
         content: "Revele suas fotos com qualidade profissional. Envie pelo site em minutos.",

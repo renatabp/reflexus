@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Coffee, Frame, BookHeart, Shirt, Puzzle, Magnet, Sparkles, ShieldCheck, Truck, Camera, Phone, Mail } from "lucide-react";
+import { LogoIcon } from "@/components/LogoIcon";
 
 import productsHero from "@/assets/products-hero.jpg";
 import productMug from "@/assets/product-mug.jpg";
@@ -14,13 +15,13 @@ export const Route = createFileRoute("/produtos")({
   component: Produtos,
   head: () => ({
     meta: [
-      { title: "Foto-presentes & Personalizados — Reflexus Digital" },
+      { title: "Foto-presentes & Personalizados — Reflexus" },
       {
         name: "description",
         content:
           "Canecas, quadros, álbuns, camisetas, ímãs e mais — transforme suas fotos em presentes únicos com a qualidade da Reflexus.",
       },
-      { property: "og:title", content: "Foto-presentes & Personalizados — Reflexus Digital" },
+      { property: "og:title", content: "Foto-presentes & Personalizados — Reflexus" },
       {
         property: "og:description",
         content:
@@ -53,9 +54,9 @@ function Nav() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link to="/" className="flex items-baseline gap-2">
+        <Link to="/" className="flex items-center gap-2">
+          <LogoIcon className="h-8 w-8 text-foreground" />
           <span className="font-serif text-2xl tracking-tight">Reflexus</span>
-          <span className="text-lg font-bold uppercase tracking-[0.25em] text-primary">Digital</span>
         </Link>
         <nav className="hidden gap-8 text-sm font-medium text-muted-foreground md:flex">
           <Link to="/" className="hover:text-foreground">Início</Link>
@@ -514,12 +515,12 @@ function Footer() {
     <footer className="border-t border-border bg-cream/50">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-baseline gap-2">
+          <div className="flex items-center gap-2">
+            <LogoIcon className="h-7 w-7 text-foreground" />
             <span className="font-serif text-2xl">Reflexus</span>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">Digital</span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            Laboratório fotográfico digital. Há mais de 30 anos preservando memórias com qualidade profissional.
+            Laboratório fotográfico. Há mais de 30 anos preservando memórias com qualidade profissional.
           </p>
         </div>
 
@@ -550,7 +551,7 @@ function Footer() {
       </div>
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-muted-foreground md:flex-row">
-          <span>© {new Date().getFullYear()} Reflexus Digital. Todos os direitos reservados.</span>
+          <span>© {new Date().getFullYear()} Reflexus. Todos os direitos reservados.</span>
           <span>Feito com carinho para preservar memórias.</span>
         </div>
       </div>
