@@ -82,7 +82,7 @@ function Hero() {
           </h1>
 
           <p className="mt-6 max-w-lg text-lg text-muted-foreground">
-            Revelação profissional em papel e químicos Kodak — o único que preserva a
+            Revelação profissional com qualidade que preserva a
             cor das suas lembranças por décadas. Envie do celular, receba em casa.
           </p>
 
