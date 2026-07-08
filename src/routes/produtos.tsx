@@ -179,122 +179,210 @@ function Marquee() {
 
 type Product = {
   img: string;
-  tag: string;
+  category: string;
   title: string;
-  desc: string;
-  price: string;
-  icon: typeof Coffee;
-  span?: string;
+  price: number;
+  oldPrice?: number;
+  installments?: { n: number; value: number };
+  badge?: "freteGratis" | "oferta";
 };
+
+const CATEGORIES = [
+  "Canecas",
+  "Quadros & Porta-retratos",
+  "Álbuns",
+  "Camisetas & Aventais",
+  "Quebra-cabeças & Mousepads",
+  "Ímãs & Chaveiros",
+  "Combos e Pacotes",
+  "Dia dos Namorados",
+];
+
+const FILTER_TAMANHO = ["A4 (20x30cm)", "A5 (15x21cm)", "10x15cm", "30x40cm"];
+const FILTER_COR = ["Branco", "Preto", "Colorido", "Kraft"];
+
+function formatBRL(v: number) {
+  return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+}
 
 function Catalog() {
   const products: Product[] = [
-    {
-      img: productMug,
-      tag: "01 — Bebidas",
-      title: "Canecas personalizadas",
-      desc: "Cerâmica branca 325ml com sua foto favorita impressa em cores vibrantes. Resistente à máquina de lavar.",
-      price: "a partir de R$ 39",
-      icon: Coffee,
-      span: "md:col-span-2",
-    },
-    {
-      img: productFrame,
-      tag: "02 — Decoração",
-      title: "Porta-retratos & Quadros MDF",
-      desc: "Molduras em madeira e quadros em MDF nos tamanhos 15x21, 20x30 e 30x40.",
-      price: "a partir de R$ 49",
-      icon: Frame,
-    },
-    {
-      img: productAlbum,
-      tag: "03 — Memórias",
-      title: "Álbuns fotográficos",
-      desc: "Capa dura em couro sintético, papel fotográfico premium, encadernação profissional.",
-      price: "a partir de R$ 149",
-      icon: BookHeart,
-    },
-    {
-      img: productApparel,
-      tag: "04 — Vestir",
-      title: "Camisetas & Aventais",
-      desc: "Estampa premium em algodão. Camisetas, aventais, ecobags e chinelos com sua foto.",
-      price: "a partir de R$ 59",
-      icon: Shirt,
-    },
-    {
-      img: productGifts,
-      tag: "05 — Presentear",
-      title: "Quebra-cabeças & Mousepads",
-      desc: "Quebra-cabeças de 60, 300 e 500 peças. Mousepads antiderrapantes personalizados.",
-      price: "a partir de R$ 45",
-      icon: Puzzle,
-    },
-    {
-      img: productMagnet,
-      tag: "06 — Miudezas",
-      title: "Ímãs & Chaveiros",
-      desc: "Ímãs de geladeira em formato polaroide e chaveiros acrílicos. Perfeitos para lembrancinhas.",
-      price: "a partir de R$ 12",
-      icon: Magnet,
-      span: "md:col-span-2",
-    },
+    { img: productMug, category: "Canecas", title: "Caneca cerâmica personalizada 325ml", price: 39.9, installments: { n: 3, value: 13.3 } },
+    { img: productFrame, category: "Quadros & Porta-retratos", title: "Porta-retrato MDF 15x21cm", price: 49.0, oldPrice: 69.0, installments: { n: 2, value: 24.5 }, badge: "oferta" },
+    { img: productAlbum, category: "Álbuns", title: "Álbum capa dura couro sintético", price: 149.0, installments: { n: 5, value: 29.8 }, badge: "freteGratis" },
+    { img: productApparel, category: "Camisetas & Aventais", title: "Camiseta algodão com foto personalizada", price: 59.9, installments: { n: 3, value: 19.97 } },
+    { img: productGifts, category: "Quebra-cabeças & Mousepads", title: "Quebra-cabeça 300 peças personalizado", price: 79.9, oldPrice: 99.0, installments: { n: 3, value: 26.63 }, badge: "oferta" },
+    { img: productMagnet, category: "Ímãs & Chaveiros", title: "Ímã polaroide personalizado (kit 6un)", price: 29.9, installments: { n: 2, value: 14.95 } },
+    { img: productMug, category: "Combos e Pacotes", title: "Combo 2 canecas + porta-retrato", price: 119.0, oldPrice: 149.0, installments: { n: 4, value: 29.75 }, badge: "oferta" },
+    { img: productFrame, category: "Quadros & Porta-retratos", title: "Quadro MDF 30x40cm alta resolução", price: 89.0, installments: { n: 3, value: 29.67 } },
+    { img: productAlbum, category: "Dia dos Namorados", title: "Álbum romântico 20 fotos + caixa", price: 189.0, installments: { n: 6, value: 31.5 }, badge: "freteGratis" },
+    { img: productApparel, category: "Camisetas & Aventais", title: "Avental personalizado com foto", price: 69.0, installments: { n: 3, value: 23.0 } },
+    { img: productGifts, category: "Quebra-cabeças & Mousepads", title: "Mousepad retangular antiderrapante", price: 34.9, installments: { n: 2, value: 17.45 } },
+    { img: productMagnet, category: "Ímãs & Chaveiros", title: "Chaveiro acrílico foto (kit 4un)", price: 24.9, installments: { n: 2, value: 12.45 } },
   ];
 
   return (
-    <section id="catalogo" className="bg-cream/60 py-24">
+    <section id="catalogo" className="bg-cream/60 py-16 md:py-20">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-14 flex items-end justify-between gap-6">
+        <nav className="mb-6 text-sm text-muted-foreground">
+          <Link to="/" className="hover:text-foreground">Início</Link>
+          <span className="mx-2">/</span>
+          <span className="text-foreground">Produtos</span>
+        </nav>
+
+        <div className="mb-10 flex flex-wrap items-end justify-between gap-6">
           <div>
             <span className="text-xs font-semibold uppercase tracking-widest text-primary">Catálogo</span>
-            <h2 className="mt-4 text-4xl md:text-5xl">Escolha o presente perfeito.</h2>
+            <h2 className="mt-3 text-4xl md:text-5xl">Todos os produtos</h2>
           </div>
-          <a href={REVEAL_URL} className="hidden shrink-0 items-center gap-2 text-sm font-semibold underline-offset-4 hover:underline md:inline-flex">
-            Encomendar agora →
-          </a>
+
+          <div className="flex items-center gap-3">
+            <label htmlFor="sort" className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+              Ordenar
+            </label>
+            <select
+              id="sort"
+              className="rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-foreground shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
+              defaultValue="destaque"
+            >
+              <option value="destaque">Destaque</option>
+              <option value="menor">Menor preço</option>
+              <option value="maior">Maior preço</option>
+              <option value="novos">Mais recentes</option>
+            </select>
+          </div>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
-          {products.map((p) => (
-            <ProductCard key={p.title} product={p} />
-          ))}
+        <div className="grid gap-8 lg:grid-cols-[260px_1fr]">
+          <aside className="space-y-8">
+            <FilterGroup title="Categorias" items={CATEGORIES} />
+            <FilterGroup title="Tamanho" items={FILTER_TAMANHO} />
+            <FilterGroup title="Cor" items={FILTER_COR} />
+          </aside>
+
+          <div>
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
+              {products.map((p) => (
+                <ProductCard key={p.title} product={p} />
+              ))}
+            </div>
+
+            <div className="mt-12 flex items-center justify-center gap-2">
+              {[1, 2, 3, 4, 5].map((n) => (
+                <button
+                  key={n}
+                  className={`grid h-10 w-10 place-items-center rounded-full border text-sm font-semibold transition ${
+                    n === 1
+                      ? "border-primary bg-primary text-primary-foreground"
+                      : "border-border bg-card text-foreground hover:border-primary hover:text-primary"
+                  }`}
+                >
+                  {n}
+                </button>
+              ))}
+              <button className="ml-1 grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-foreground hover:border-primary hover:text-primary">
+                →
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 }
 
+function FilterGroup({ title, items }: { title: string; items: string[] }) {
+  return (
+    <div className="rounded-2xl border border-border bg-card p-5">
+      <div className="mb-4 font-serif text-lg text-foreground">{title}</div>
+      <ul className="space-y-3">
+        {items.map((it) => (
+          <li key={it}>
+            <label className="flex cursor-pointer items-center gap-3 text-sm text-muted-foreground transition hover:text-foreground">
+              <input
+                type="checkbox"
+                className="h-4 w-4 rounded border-border accent-primary"
+              />
+              {it}
+            </label>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 function ProductCard({ product }: { product: Product }) {
-  const Icon = product.icon;
+  const discount =
+    product.oldPrice && product.oldPrice > product.price
+      ? Math.round((1 - product.price / product.oldPrice) * 100)
+      : null;
+
   return (
     <a
       href={REVEAL_URL}
-      className={`group relative flex flex-col overflow-hidden rounded-3xl border border-border bg-card transition hover:-translate-y-1 hover:shadow-warm ${product.span ?? ""}`}
+      className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:-translate-y-1 hover:shadow-warm"
     >
-      <div className="relative aspect-[4/3] overflow-hidden">
+      <div className="relative aspect-square overflow-hidden bg-cream">
         <img
           src={product.img}
           alt={product.title}
           loading="lazy"
           className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
         />
-        <div className="absolute left-4 top-4 rounded-full bg-background/95 px-3 py-1 text-[11px] font-semibold uppercase tracking-widest text-foreground">
-          {product.tag}
-        </div>
-        <div className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-gradient-warm text-primary-foreground shadow-warm">
-          <Icon className="h-4 w-4" />
-        </div>
-      </div>
-      <div className="flex items-start justify-between gap-4 p-7">
-        <div>
-          <div className="font-serif text-2xl">{product.title}</div>
-          <p className="mt-2 max-w-md text-sm text-muted-foreground">{product.desc}</p>
-          <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-sun/25 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-flame">
-            {product.price}
+
+        {discount !== null && (
+          <div className="absolute left-3 top-3 grid h-14 w-14 place-items-center rounded-full bg-sun/90 text-center text-[11px] font-bold uppercase leading-tight text-flame shadow-card">
+            <span>
+              {discount}%
+              <br />
+              OFF
+            </span>
           </div>
+        )}
+        {product.badge === "freteGratis" && (
+          <div className="absolute left-3 top-3 grid h-14 w-14 place-items-center rounded-full bg-primary/90 text-center text-[10px] font-bold uppercase leading-tight text-primary-foreground shadow-card">
+            <span>
+              Frete
+              <br />
+              grátis
+            </span>
+          </div>
+        )}
+
+        <span className="absolute right-3 top-3 rounded-full bg-background/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground backdrop-blur">
+          {product.category}
+        </span>
+      </div>
+
+      <div className="flex flex-1 flex-col p-5">
+        <div className="min-h-[3rem] text-sm font-medium leading-snug text-foreground line-clamp-2">
+          {product.title}
         </div>
-        <div className="mt-1 grid h-11 w-11 shrink-0 place-items-center rounded-full bg-foreground text-background transition group-hover:bg-primary">
-          <ArrowUpRight className="h-5 w-5" />
+
+        <div className="mt-4">
+          {product.oldPrice && (
+            <div className="text-xs text-muted-foreground line-through">
+              {formatBRL(product.oldPrice)}
+            </div>
+          )}
+          <div className="font-serif text-2xl text-primary">
+            {formatBRL(product.price)}
+          </div>
+          {product.installments && (
+            <div className="mt-1 text-xs text-muted-foreground">
+              {product.installments.n}x de{" "}
+              <span className="font-semibold text-foreground">
+                {formatBRL(product.installments.value)}
+              </span>{" "}
+              sem juros
+            </div>
+          )}
+        </div>
+
+        <div className="mt-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-foreground opacity-0 transition group-hover:opacity-100">
+          Comprar
+          <ArrowUpRight className="h-3.5 w-3.5" />
         </div>
       </div>
     </a>
