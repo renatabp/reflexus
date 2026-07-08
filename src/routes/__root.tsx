@@ -87,7 +87,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Reflexus Digital — Revelação de fotos" },
       {
         property: "og:description",
-        content: "Revele suas fotos com qualidade Kodak. Envie pelo site em minutos.",
+        content: "Revele suas fotos com qualidade profissional. Envie pelo site em minutos.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
