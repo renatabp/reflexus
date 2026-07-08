@@ -292,8 +292,8 @@ function Steps() {
 function Testimonials() {
   const items = [
     { n: "Tânia M. Santos", t: "Impressionada com a qualidade. As cores das fotos das minhas filhas ficaram perfeitas, exatamente como no visor." },
-    { n: "Carlos Eduardo", t: "Uso há anos para revelar fotos de família. Nunca amarelaram. Confiança e qualidade sem igual." },
-    { n: "Marina R.", t: "Envie do celular, chegou em poucos dias, embalagem impecável. Recomendo demais." },
+    { n: "Cliente Reflexus", t: "Comprei em um site de grande magazine e me arrependi depois que comparei com as fotos de vocês." },
+    { n: "Cliente Reflexus", t: "super rapido obrigada pela atencao con quistaram uma clientee" },
   ];
   return (
     <section className="bg-foreground py-24 text-background">
