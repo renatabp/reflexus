@@ -178,8 +178,11 @@ function Marquee() {
   );
 }
 
+type Section = "albuns" | "porta-retratos" | "presentes";
+
 type Product = {
   img: string;
+  section: Section;
   category: string;
   title: string;
   price: number;
@@ -188,19 +191,16 @@ type Product = {
   badge?: "freteGratis" | "oferta";
 };
 
-const CATEGORIES = [
-  "Canecas",
-  "Quadros & Porta-retratos",
-  "Álbuns",
-  "Camisetas & Aventais",
-  "Canva & Mousepads",
-  "Ímãs & Chaveiros",
-  "Combos e Pacotes",
-  "Dia dos Namorados",
+const SECTIONS: {
+  id: Section;
+  label: string;
+  desc: string;
+  icon: typeof BookHeart;
+}[] = [
+  { id: "albuns", label: "Álbuns", desc: "Capa dura, couro sintético e edições românticas.", icon: BookHeart },
+  { id: "porta-retratos", label: "Porta-retratos", desc: "MDF, acrílico e quadros em vários tamanhos.", icon: Frame },
+  { id: "presentes", label: "Presentes", desc: "Canecas, camisetas, aventais, ímãs e mais.", icon: Sparkles },
 ];
-
-const FILTER_TAMANHO = ["A4 (20x30cm)", "A5 (15x21cm)", "10x15cm", "30x40cm"];
-const FILTER_COR = ["Branco", "Preto", "Colorido", "Kraft"];
 
 function formatBRL(v: number) {
   return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -208,19 +208,28 @@ function formatBRL(v: number) {
 
 function Catalog() {
   const products: Product[] = [
-    { img: productMug, category: "Canecas", title: "Caneca cerâmica personalizada 325ml", price: 39.9, installments: { n: 3, value: 13.3 } },
-    { img: productFrame, category: "Quadros & Porta-retratos", title: "Porta-retrato MDF 15x21cm", price: 49.0, oldPrice: 69.0, installments: { n: 2, value: 24.5 }, badge: "oferta" },
-    { img: productAlbum, category: "Álbuns", title: "Álbum capa dura couro sintético", price: 149.0, installments: { n: 5, value: 29.8 }, badge: "freteGratis" },
-    { img: productApparel, category: "Camisetas & Aventais", title: "Camiseta algodão com foto personalizada", price: 59.9, installments: { n: 3, value: 19.97 } },
-    { img: productGifts, category: "Canva & Mousepads", title: "Canva personalizado 30x40cm alta qualidade", price: 79.9, oldPrice: 99.0, installments: { n: 3, value: 26.63 }, badge: "oferta" },
-    { img: productMagnet, category: "Ímãs & Chaveiros", title: "Ímã polaroide personalizado (kit 6un)", price: 29.9, installments: { n: 2, value: 14.95 } },
-    { img: productMug, category: "Combos e Pacotes", title: "Combo 2 canecas + porta-retrato", price: 119.0, oldPrice: 149.0, installments: { n: 4, value: 29.75 }, badge: "oferta" },
-    { img: productFrame, category: "Quadros & Porta-retratos", title: "Quadro MDF 30x40cm alta resolução", price: 89.0, installments: { n: 3, value: 29.67 } },
-    { img: productAlbum, category: "Dia dos Namorados", title: "Álbum romântico 20 fotos + caixa", price: 189.0, installments: { n: 6, value: 31.5 }, badge: "freteGratis" },
-    { img: productApparel, category: "Camisetas & Aventais", title: "Avental personalizado com foto", price: 69.0, installments: { n: 3, value: 23.0 } },
-    { img: productGifts, category: "Canva & Mousepads", title: "Mousepad retangular antiderrapante", price: 34.9, installments: { n: 2, value: 17.45 } },
-    { img: productMagnet, category: "Ímãs & Chaveiros", title: "Chaveiro acrílico foto (kit 4un)", price: 24.9, installments: { n: 2, value: 12.45 } },
+    // Álbuns
+    { img: productAlbum, section: "albuns", category: "Álbuns", title: "Álbum capa dura couro sintético", price: 149.0, installments: { n: 5, value: 29.8 }, badge: "freteGratis" },
+    { img: productAlbum, section: "albuns", category: "Álbuns", title: "Álbum romântico 20 fotos + caixa", price: 189.0, installments: { n: 6, value: 31.5 }, badge: "freteGratis" },
+    { img: productAlbum, section: "albuns", category: "Álbuns", title: "Álbum família 40 fotos 15x21cm", price: 219.0, installments: { n: 6, value: 36.5 }, badge: "freteGratis" },
+    { img: productAlbum, section: "albuns", category: "Álbuns", title: "Mini álbum de bolso 10 fotos", price: 59.0, installments: { n: 2, value: 29.5 } },
+    // Porta-retratos
+    { img: productFrame, section: "porta-retratos", category: "Porta-retratos", title: "Porta-retrato MDF 15x21cm", price: 49.0, oldPrice: 69.0, installments: { n: 2, value: 24.5 }, badge: "oferta" },
+    { img: productFrame, section: "porta-retratos", category: "Porta-retratos", title: "Quadro MDF 30x40cm alta resolução", price: 89.0, installments: { n: 3, value: 29.67 } },
+    { img: productFrame, section: "porta-retratos", category: "Porta-retratos", title: "Porta-retrato acrílico 13x18cm", price: 39.9, installments: { n: 2, value: 19.95 } },
+    { img: productFrame, section: "porta-retratos", category: "Porta-retratos", title: "Quadro trio MDF 20x30cm (3 fotos)", price: 159.0, oldPrice: 199.0, installments: { n: 5, value: 31.8 }, badge: "oferta" },
+    // Presentes
+    { img: productMug, section: "presentes", category: "Canecas", title: "Caneca cerâmica personalizada 325ml", price: 39.9, installments: { n: 3, value: 13.3 } },
+    { img: productApparel, section: "presentes", category: "Camisetas", title: "Camiseta algodão com foto personalizada", price: 59.9, installments: { n: 3, value: 19.97 } },
+    { img: productApparel, section: "presentes", category: "Aventais", title: "Avental personalizado com foto", price: 69.0, installments: { n: 3, value: 23.0 } },
+    { img: productMagnet, section: "presentes", category: "Ímãs", title: "Ímã polaroide personalizado (kit 6un)", price: 29.9, installments: { n: 2, value: 14.95 } },
+    { img: productMagnet, section: "presentes", category: "Chaveiros", title: "Chaveiro acrílico foto (kit 4un)", price: 24.9, installments: { n: 2, value: 12.45 } },
+    { img: productGifts, section: "presentes", category: "Mousepads", title: "Mousepad retangular antiderrapante", price: 34.9, installments: { n: 2, value: 17.45 } },
   ];
+
+  const [active, setActive] = useState<Section>("albuns");
+  const filtered = products.filter((p) => p.section === active);
+  const activeSection = SECTIONS.find((s) => s.id === active)!;
 
   return (
     <section id="catalogo" className="bg-cream/60 py-16 md:py-20">
@@ -231,12 +240,60 @@ function Catalog() {
           <span className="text-foreground">Produtos</span>
         </nav>
 
-        <div className="mb-10 flex flex-wrap items-end justify-between gap-6">
-          <div>
-            <span className="text-xs font-semibold uppercase tracking-widest text-primary">Catálogo</span>
-            <h2 className="mt-3 text-4xl md:text-5xl">Todos os produtos</h2>
-          </div>
+        <div className="mb-10 max-w-3xl">
+          <span className="text-xs font-semibold uppercase tracking-widest text-primary">Catálogo</span>
+          <h2 className="mt-3 text-4xl md:text-5xl">Escolha uma categoria</h2>
+          <p className="mt-4 text-muted-foreground">
+            Três coleções pensadas pra cada tipo de memória: álbuns pra guardar, porta-retratos
+            pra expor e presentes pra dar de coração.
+          </p>
+        </div>
 
+        <div className="mb-12 grid gap-4 md:grid-cols-3">
+          {SECTIONS.map((s) => {
+            const isActive = active === s.id;
+            return (
+              <button
+                key={s.id}
+                type="button"
+                onClick={() => setActive(s.id)}
+                className={`group relative flex flex-col items-start gap-4 overflow-hidden rounded-3xl border p-6 text-left transition ${
+                  isActive
+                    ? "border-primary bg-gradient-warm text-primary-foreground shadow-warm"
+                    : "border-border bg-card text-foreground hover:-translate-y-1 hover:border-primary hover:shadow-card"
+                }`}
+              >
+                <div
+                  className={`grid h-14 w-14 place-items-center rounded-2xl ${
+                    isActive ? "bg-primary-foreground/20 text-primary-foreground" : "bg-gradient-warm text-primary-foreground"
+                  }`}
+                >
+                  <s.icon className="h-7 w-7" />
+                </div>
+                <div className="flex-1">
+                  <div className="font-serif text-3xl md:text-4xl">{s.label}</div>
+                  <p className={`mt-2 text-sm ${isActive ? "text-primary-foreground/90" : "text-muted-foreground"}`}>
+                    {s.desc}
+                  </p>
+                </div>
+                <div
+                  className={`inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest ${
+                    isActive ? "text-primary-foreground" : "text-primary"
+                  }`}
+                >
+                  {isActive ? "Selecionado" : "Ver produtos"}
+                  <ArrowUpRight className="h-4 w-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                </div>
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-6">
+          <div>
+            <span className="text-xs font-semibold uppercase tracking-widest text-primary">{activeSection.label}</span>
+            <h3 className="mt-2 font-serif text-3xl md:text-4xl">{filtered.length} produtos em {activeSection.label}</h3>
+          </div>
           <div className="flex items-center gap-3">
             <label htmlFor="sort" className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
               Ordenar
@@ -254,43 +311,16 @@ function Catalog() {
           </div>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-[260px_1fr]">
-          <aside className="space-y-8">
-            <FilterGroup title="Categorias" items={CATEGORIES} />
-            <FilterGroup title="Tamanho" items={FILTER_TAMANHO} />
-            <FilterGroup title="Cor" items={FILTER_COR} />
-          </aside>
-
-          <div>
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
-              {products.map((p) => (
-                <ProductCard key={p.title} product={p} />
-              ))}
-            </div>
-
-            <div className="mt-12 flex items-center justify-center gap-2">
-              {[1, 2, 3, 4, 5].map((n) => (
-                <button
-                  key={n}
-                  className={`grid h-10 w-10 place-items-center rounded-full border text-sm font-semibold transition ${
-                    n === 1
-                      ? "border-primary bg-primary text-primary-foreground"
-                      : "border-border bg-card text-foreground hover:border-primary hover:text-primary"
-                  }`}
-                >
-                  {n}
-                </button>
-              ))}
-              <button className="ml-1 grid h-10 w-10 place-items-center rounded-full border border-border bg-card text-foreground hover:border-primary hover:text-primary">
-                →
-              </button>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {filtered.map((p) => (
+            <ProductCard key={p.title} product={p} />
+          ))}
         </div>
       </div>
     </section>
   );
 }
+
 
 function FilterGroup({ title, items }: { title: string; items: string[] }) {
   return (
