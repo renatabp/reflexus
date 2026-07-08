@@ -107,9 +107,9 @@ function Hero() {
             Tamanhos, papéis e <span className="text-gradient-warm">acabamentos</span> pra sua foto.
           </h1>
 
-          <p className="mt-6 max-w-lg text-lg text-muted-foreground">
-            Do 10x15 clássico ao 30x40 de parede. Papel brilho, fosco ou perolado.
-            Com ou sem borda branca. Tudo revelado em papel e químicos originais.
+          <p className="mt-6 max-w-lg text-lg text-muted-foreground whitespace-pre-line">
+            Do 10x15 clássico ao 30x40 de parede. Papel brilho ou fosco. Com ou sem tarja. Tudo revelado em papel profissional
+            Para tamanhos maiores, consultar orçamento e frete.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
