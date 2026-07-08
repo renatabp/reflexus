@@ -171,7 +171,7 @@ function Stat({ n, label }: { n: string; label: string }) {
 }
 
 function Marquee() {
-  const items = ["10x15", "13x18", "15x21", "20x30", "30x40", "Brilho", "Fosco", "Perolado", "Com borda", "Sem borda"];
+  const items = ["10x15", "13x18", "15x21", "20x30", "30x40", "Brilho", "Fosco", "Polaroide", "Com tarja", "Sem tarja", "Borda branca"];
   return (
     <div className="border-y border-border bg-cream py-4 overflow-hidden">
       <div className="flex gap-10 whitespace-nowrap text-sm font-semibold uppercase tracking-widest text-muted-foreground" style={{ animation: "marquee 30s linear infinite" }}>
