@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { LogoIcon } from "@/components/LogoIcon";
 import {
   ArrowUpRight,
   Camera,
@@ -20,13 +21,13 @@ export const Route = createFileRoute("/revelacao")({
   component: Revelacao,
   head: () => ({
     meta: [
-      { title: "Revelação de Fotos — Tamanhos, Papéis e Acabamentos | Reflexus Digital" },
+      { title: "Revelação de Fotos — Tamanhos, Papéis e Acabamentos | Reflexus" },
       {
         name: "description",
         content:
           "Revele suas fotos em papel fotográfico profissional. Escolha tamanho (10x15, 13x18, 15x21, 20x30), acabamento brilho ou fosco, borda branca e mais.",
       },
-      { property: "og:title", content: "Revelação de Fotos — Reflexus Digital" },
+      { property: "og:title", content: "Revelação de Fotos — Reflexus" },
       {
         property: "og:description",
         content:
@@ -60,9 +61,9 @@ function Nav() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link to="/" className="flex items-baseline gap-2">
+        <Link to="/" className="flex items-center gap-2">
+          <LogoIcon className="h-8 w-8 text-foreground" />
           <span className="font-serif text-2xl tracking-tight">Reflexus</span>
-          <span className="text-lg font-bold uppercase tracking-[0.25em] text-primary">Digital</span>
         </Link>
         <nav className="hidden gap-8 text-sm font-medium text-muted-foreground md:flex">
           <Link to="/" className="hover:text-foreground">Início</Link>
