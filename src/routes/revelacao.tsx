@@ -108,8 +108,8 @@ function Hero() {
           </h1>
 
           <p className="mt-6 max-w-lg text-lg text-muted-foreground whitespace-pre-line">
-            Do 10x15 clássico ao 30x40 de parede. Papel brilho ou fosco. Com ou sem tarja. Tudo revelado em papel profissional
-            Para tamanhos maiores, consultar orçamento e frete.
+            Do 10x15 clássico ao 30x40 de parede. Papel brilho ou fosco. Com ou sem tarja. Polaroides também.
+            Tudo revelado em papel profissional. Para tamanhos maiores, consultar orçamento e frete.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
