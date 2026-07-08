@@ -168,7 +168,7 @@ function Marquee() {
 function Quality() {
   const features = [
     { icon: ShieldCheck, title: "Qualidade profissional", desc: "Papéis e químicos originais que preservam suas fotos por toda a vida — não amarelam com o tempo." },
-    { icon: Clock, title: "30+ anos de história", desc: "Referência regional em revelação profissional. Feito por gente que ama fotografia." },
+    { icon: Clock, title: "30+ anos de história", desc: "Referência regional em SC em expansão para o Brasil, em revelação profissional. Feito por gente que ama fotografia." },
     { icon: Truck, title: "Envio para todo Brasil", desc: "Envie do celular, receba em casa. Simples, rápido e com rastreio." },
   ];
   return (
@@ -182,7 +182,7 @@ function Quality() {
           <p className="mt-6 text-muted-foreground">
             A maioria dos serviços online imprime em papel gráfico — barato, mas que
             amarela em poucos anos. Na Reflexus, usamos papel fotográfico
-            e químicos originais desde 1993. Suas fotos duram gerações.
+            e químicos originais e profissionais desde 1993. Suas fotos duram gerações.
           </p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
@@ -266,7 +266,7 @@ function ServiceCard({ img, tag, title, desc }: { img: string; tag: string; titl
 
 function Steps() {
   const steps = [
-    { n: "01", t: "Escolha suas fotos", d: "No Android, envie direto do celular pro computador sem perder a qualidade, mesmo pelo site. Ou, se preferir, mande o link da nuvem." },
+    { n: "01", t: "Escolha suas fotos", d: "Envie direto do celular ou computador sem perder a qualidade, mesmo pelo site. Ou, se preferir, mande o link da nuvem." },
     { n: "02", t: "Personalize", d: "Escolha tamanho, papel, polaroide ou foto-presente." },
     { n: "03", t: "Receba em casa", d: "Impressão profissional entregue em todo o Brasil." },
   ];
