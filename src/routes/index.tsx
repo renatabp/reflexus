@@ -16,6 +16,7 @@ function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <Nav />
       <Hero />
+      <SocialBar />
       <Marquee />
       <Services />
       <Steps />
@@ -145,6 +146,38 @@ function Stat({ n, label }: { n: string; label: string }) {
       <div className="font-serif text-3xl text-foreground">{n}</div>
       <div className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">{label}</div>
     </div>
+  );
+}
+
+function SocialBar() {
+  return (
+    <section className="border-y border-border bg-cream/50">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-5 sm:flex-row">
+        <p className="text-sm font-medium text-muted-foreground">
+          <span className="font-semibold text-foreground">Siga-nos nas redes</span> e fique por dentro das novidades
+        </p>
+        <div className="flex items-center gap-3">
+          <a
+            href="https://instagram.com/reflexusdigital"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 rounded-full bg-background px-4 py-2 text-sm font-semibold text-foreground shadow-card transition hover:bg-gradient-warm hover:text-primary-foreground"
+          >
+            <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+            Instagram
+          </a>
+          <a
+            href="https://tiktok.com/@reflexusdigital"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 rounded-full bg-background px-4 py-2 text-sm font-semibold text-foreground shadow-card transition hover:bg-gradient-warm hover:text-primary-foreground"
+          >
+            <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+            TikTok
+          </a>
+        </div>
+      </div>
+    </section>
   );
 }
 
