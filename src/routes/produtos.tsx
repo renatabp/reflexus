@@ -58,17 +58,18 @@ function Nav() {
         </Link>
         <nav className="hidden gap-8 text-sm font-medium text-muted-foreground md:flex">
           <Link to="/" className="hover:text-foreground">Início</Link>
+          <Link to="/revelacao" className="hover:text-foreground">Revelação</Link>
           <Link to="/produtos" className="text-foreground">Produtos</Link>
-          <Link to="/" hash="qualidade" className="hover:text-foreground">Qualidade</Link>
+          <Link to="/" hash="como-funciona" className="hover:text-foreground">Como funciona</Link>
           <Link to="/" hash="contato" className="hover:text-foreground">Contato</Link>
         </nav>
-        <a
-          href={REVEAL_URL}
+        <Link
+          to="/revelacao"
           className="group inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-warm transition hover:brightness-110"
         >
-          Encomendar
+          Revelar fotos
           <ArrowUpRight className="h-4 w-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-        </a>
+        </Link>
       </div>
     </header>
   );
