@@ -376,7 +376,7 @@ function Steps() {
   const steps = [
     { n: "01", t: "Envie suas fotos", d: "Direto do celular ou computador. Sem limite de quantidade." },
     { n: "02", t: "Escolha tamanho e acabamento", d: "Combine formatos e finishes na mesma encomenda." },
-    { n: "03", t: "Receba impressas em casa", d: "Revelação Kodak entregue em até 7 dias úteis." },
+    { n: "03", t: "Receba impressas em casa", d: "Revelação profissional entregue em até 7 dias úteis." },
   ];
   return (
     <section className="mx-auto max-w-7xl px-6 py-24">
