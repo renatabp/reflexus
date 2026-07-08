@@ -226,7 +226,7 @@ function Services() {
             img={gifts}
             tag="02 — Personalizados"
             title="Foto-presentes & Álbuns"
-            desc="Canecas, camisas, aventais, chinelos, mousepads, quebra-cabeças, quadros em MDF, álbuns e porta-retratos."
+            desc="Canecas, quadros, álbuns, camisetas, ímãs, porta-retratos, canva e muito mais."
           />
         </div>
       </div>
