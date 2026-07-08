@@ -117,7 +117,7 @@ function Hero() {
           </div>
 
           <div className="mt-12 grid grid-cols-3 gap-6 border-t border-border pt-8">
-            <Stat n="+20" label="Produtos personalizáveis" />
+            <Stat n="+20" label="Produtos únicos e personalizados" />
             <Stat n="7 dias" label="Prazo médio de produção" />
             <Stat n="Brasil" label="Entrega em todo país" />
           </div>
