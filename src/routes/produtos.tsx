@@ -161,7 +161,7 @@ function Stat({ n, label }: { n: string; label: string }) {
 }
 
 function Marquee() {
-  const items = ["Canecas", "Quadros em MDF", "Álbuns", "Porta-retratos", "Camisetas", "Aventais", "Chinelos", "Mousepads", "Quebra-cabeças", "Ímãs", "Chaveiros"];
+  const items = ["Canecas", "Quadros em MDF", "Álbuns", "Porta-retratos", "Camisetas", "Aventais", "Chinelos", "Mousepads", "Canva", "Ímãs", "Chaveiros"];
   return (
     <div className="border-y border-border bg-cream py-4 overflow-hidden">
       <div className="flex gap-10 whitespace-nowrap text-sm font-semibold uppercase tracking-widest text-muted-foreground" style={{ animation: "marquee 35s linear infinite" }}>
@@ -192,7 +192,7 @@ const CATEGORIES = [
   "Quadros & Porta-retratos",
   "Álbuns",
   "Camisetas & Aventais",
-  "Quebra-cabeças & Mousepads",
+  "Canva & Mousepads",
   "Ímãs & Chaveiros",
   "Combos e Pacotes",
   "Dia dos Namorados",
@@ -211,13 +211,13 @@ function Catalog() {
     { img: productFrame, category: "Quadros & Porta-retratos", title: "Porta-retrato MDF 15x21cm", price: 49.0, oldPrice: 69.0, installments: { n: 2, value: 24.5 }, badge: "oferta" },
     { img: productAlbum, category: "Álbuns", title: "Álbum capa dura couro sintético", price: 149.0, installments: { n: 5, value: 29.8 }, badge: "freteGratis" },
     { img: productApparel, category: "Camisetas & Aventais", title: "Camiseta algodão com foto personalizada", price: 59.9, installments: { n: 3, value: 19.97 } },
-    { img: productGifts, category: "Quebra-cabeças & Mousepads", title: "Quebra-cabeça 300 peças personalizado", price: 79.9, oldPrice: 99.0, installments: { n: 3, value: 26.63 }, badge: "oferta" },
+    { img: productGifts, category: "Canva & Mousepads", title: "Canva personalizado 30x40cm alta qualidade", price: 79.9, oldPrice: 99.0, installments: { n: 3, value: 26.63 }, badge: "oferta" },
     { img: productMagnet, category: "Ímãs & Chaveiros", title: "Ímã polaroide personalizado (kit 6un)", price: 29.9, installments: { n: 2, value: 14.95 } },
     { img: productMug, category: "Combos e Pacotes", title: "Combo 2 canecas + porta-retrato", price: 119.0, oldPrice: 149.0, installments: { n: 4, value: 29.75 }, badge: "oferta" },
     { img: productFrame, category: "Quadros & Porta-retratos", title: "Quadro MDF 30x40cm alta resolução", price: 89.0, installments: { n: 3, value: 29.67 } },
     { img: productAlbum, category: "Dia dos Namorados", title: "Álbum romântico 20 fotos + caixa", price: 189.0, installments: { n: 6, value: 31.5 }, badge: "freteGratis" },
     { img: productApparel, category: "Camisetas & Aventais", title: "Avental personalizado com foto", price: 69.0, installments: { n: 3, value: 23.0 } },
-    { img: productGifts, category: "Quebra-cabeças & Mousepads", title: "Mousepad retangular antiderrapante", price: 34.9, installments: { n: 2, value: 17.45 } },
+    { img: productGifts, category: "Canva & Mousepads", title: "Mousepad retangular antiderrapante", price: 34.9, installments: { n: 2, value: 17.45 } },
     { img: productMagnet, category: "Ímãs & Chaveiros", title: "Chaveiro acrílico foto (kit 4un)", price: 24.9, installments: { n: 2, value: 12.45 } },
   ];
 
