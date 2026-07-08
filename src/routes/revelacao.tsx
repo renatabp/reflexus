@@ -9,7 +9,7 @@ import {
   Image as ImageIcon,
   Layers,
   Ruler,
-  Palette,
+  
   Phone,
   Mail,
   Check,
@@ -286,7 +286,7 @@ function Finishes() {
       <div className="mb-14 max-w-2xl">
         <span className="text-xs font-semibold uppercase tracking-widest text-primary">Acabamentos</span>
         <h2 className="mt-4 text-4xl md:text-5xl">
-          Brilho, fosco ou <em className="not-italic text-gradient-warm">perolado</em>?
+          Brilho ou <em className="not-italic text-gradient-warm">fosco</em>?
         </h2>
         <p className="mt-6 text-muted-foreground">
           Todos os acabamentos são em papel fotográfico premium — o que muda é a
@@ -294,7 +294,7 @@ function Finishes() {
         </p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2">
         {finishes.map((f) => (
           <div key={f.title} className="group relative overflow-hidden rounded-3xl border border-border bg-card p-8 transition hover:-translate-y-1 hover:shadow-card">
             <div className="mb-6 grid h-12 w-12 place-items-center rounded-lg bg-gradient-warm text-primary-foreground">
@@ -316,9 +316,9 @@ function Finishes() {
 
 function Styles() {
   const options = [
-    { icon: ImageIcon, t: "Com borda branca", d: "Moldura clássica de laboratório fotográfico. Realça a foto e facilita colocar em porta-retratos." },
-    { icon: ImageIcon, t: "Sem borda (full)", d: "Impressão de ponta a ponta, sem margem. Visual moderno e imersivo." },
-    { icon: Layers, t: "Foto quadrada", d: "Formato 1:1 estilo Instagram. Perfeito para grids na parede." },
+    { icon: ImageIcon, t: "Com tarja", d: "Margem branca que impede o corte da foto. Ideal para álbuns e porta-retratos." },
+    { icon: ImageIcon, t: "Sem tarja", d: "Impressão de ponta a ponta, sem margem. Visual moderno e imersivo." },
+    { icon: Layers, t: "Borda branca", d: "Uma fina borda branca em toda a foto. Toque clássico de laboratório." },
     { icon: Sparkles, t: "Preto e branco", d: "Conversão profissional em P&B com preservação de tons. Fica lindo em fosco." },
   ];
 
