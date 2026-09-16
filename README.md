@@ -1,18 +1,7 @@
-# Reflexus Revamped
+# Reflexus Site atualizado
 
-ja temos um site, https://reflexus.com.br , se voce conseguir entrar verificará que ele nao é mmuito moderno ou que pareça chamativo e convertedor, e ele é focado em mandar as fotos apenas para revelaçcao, voce consegue fazer alteraçoes?
+Recentemente, fiz uma landing page totalmente repaginada para o site da empresa, focado em atrair mais clientes e em usabilidade.
 
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://reflexustest.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/50f84f9a-20de-4818-a987-e6b836a9782c).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
